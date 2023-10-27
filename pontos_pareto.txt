@@ -1,0 +1,8 @@
+1 
+34.0 | 0.5425895914626822| {'ref_functions': ('linear_cov', 'linear', 'quadratic', 'cubic'), 'admix_features': False, 'max_layer_count': 10, 'alpha': 1.0, 'criterion_type': ('bias_retrain',), 'min_best_neurons_count': 3, 'normalize': True} 
+45.0 | 0.5381396137549809| {'ref_functions': ('quadratic',), 'admix_features': False, 'max_layer_count': 6, 'alpha': 0.291, 'criterion_type': ('validate',), 'min_best_neurons_count': 0, 'normalize': False} 
+48.0 | 0.5319369796175951| {'ref_functions': ('linear_cov', 'linear', 'quadratic'), 'admix_features': False, 'max_layer_count': 7, 'alpha': 0.655, 'criterion_type': ('validate',), 'min_best_neurons_count': 0, 'normalize': False} 
+86.0 | 0.5154404550422517| {'ref_functions': ('linear_cov', 'linear'), 'admix_features': False, 'max_layer_count': 9, 'alpha': 0.6, 'criterion_type': ('bias',), 'min_best_neurons_count': 1, 'normalize': False} 
+2 
+109.0 | 0.5154872633134462| {'ref_functions': ('linear_cov',), 'admix_features': False, 'max_layer_count': 4, 'alpha': 0.402, 'criterion_type': ('validate_bias',), 'min_best_neurons_count': 2, 'normalize': True} 
+216.0 | 0.5127062029153452| {'ref_functions': ('linear_cov', 'linear', 'quadratic', 'cubic'), 'admix_features': False, 'max_layer_count': 10, 'alpha': 1.0, 'criterion_type': ('bias_retrain',), 'min_best_neurons_count': 3, 'normalize': True} 
