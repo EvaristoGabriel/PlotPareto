@@ -36,12 +36,10 @@ df = pd.DataFrame({
 df['Iteration'] = df['Iteration'] + 1
 ################################################################
 iterations = df['Iteration'].unique()
-# st.dataframe(df)
 
 for iteration in iterations:
     st.write(f"Iteração: {iteration}")
     subset = df[df['Iteration'] == iteration]
-    print(subset)
     plot = figure(tooltips=[('Value', '@Value{0.0}'), ('Content',
                   '@Content{0.0000000000000000}'), ('Parameters', '@Parameters')])
     scatter = plot.circle('Value', 'Content',
@@ -56,6 +54,5 @@ for iteration in iterations:
         'Parameters': subset['Parameters']
     }
 
-    # Atualiza os dados no gráfico interativo na página do Streamlit
     scatter.data_source.data = data_dict
     plt.clf()
