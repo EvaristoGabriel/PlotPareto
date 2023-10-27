@@ -5,15 +5,17 @@ import streamlit as st
 from bokeh.plotting import figure, show
 from bokeh.models import HoverTool, ColumnDataSource
 
-# escrevendo um título na página
 st.title('Fronteira de Pareto')
 
-### Pegando os dados do arquivo
+uploaded_file = st.file_uploader("Faça o upload de um arquivo", type=["txt", "csv", "xlsx"])
+
 data = []
 current_group = None
 
-with open('pontos_pareto.txt', 'r') as file:
-    for line in file:
+if uploaded_file is not None:
+    uploaded_file = uploaded_file.read().decode("utf-8")
+    lines = uploaded_file.split("\n")
+    for line in lines:
         line = line.strip()
         parts = line.split("|")
         if len(parts) == 1:
