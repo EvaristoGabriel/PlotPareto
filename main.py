@@ -7,7 +7,7 @@ from bokeh.models import HoverTool, ColumnDataSource
 
 st.title('Fronteira de Pareto')
 
-uploaded_file = st.file_uploader("Faça o upload de um arquivo", type=["txt", "csv", "xlsx"])
+uploaded_file = st.file_uploader("Faça o upload de um arquivo", type=["txt"])
 
 data = []
 current_group = None
